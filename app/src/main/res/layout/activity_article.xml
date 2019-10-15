@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarArticle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Article"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/colorText"
+            android:fontFamily="@font/cormorant_light"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:src="@drawable/plus"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            app:fabSize="normal"
+            app:maxImageSize="60dp"
+            tools:fabSize="normal" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/articleText"
+                android:text="Title"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:fontFamily="@font/cormorant_light"
+                android:padding="3dp"/>
+
+            <TextView
+                android:id="@+id/contentTextArticle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/cormorant_light"
+                android:textSize="18dp"
+                android:padding="3dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/cormorant_light"
+                android:textSize="18dp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:padding="2dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/quation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/cormorant_light"
+        android:text="Add to favorites?"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_Yes"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quation"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/btn_No"
+        android:fontFamily="@font/cormorant_light"
+        android:text="Yes"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="27dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_No"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quation"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/cormorant_light"
+        android:text="No"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="27dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

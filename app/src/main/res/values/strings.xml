@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NYTimes</string>
+    <string name="tab_one">Emailed</string>
+    <string name="tab_two">Shared</string>
+    <string name="tab_three">Viewed</string>
+    <string name="tab_four">Favorites</string>
+</resources>
